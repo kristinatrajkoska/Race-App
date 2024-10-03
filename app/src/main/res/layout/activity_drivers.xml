@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/lightRed">
+
+    <!-- ova za drivers -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/driversRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:background="@drawable/square_background"
+        android:elevation="4dp" />
+
+    <!-- tuka deli -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp" />
+
+    <!-- tuka so formot pocnuva -->
+    <LinearLayout
+        android:id="@+id/questionnaireLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/square_background"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginTop="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who is your favorite driver?"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/favoriteDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter favorite driver"
+        android:padding="12dp"
+    android:textColorHint="@color/darkRed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who is your favorite team?"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/favoriteTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter favorite team"
+        android:padding="12dp"
+    android:textColorHint="@color/darkRed" />
+
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textStyle="bold" />
+</LinearLayout>
+    </LinearLayout>
